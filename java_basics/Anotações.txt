@@ -1,0 +1,33 @@
+Tópico: Java Basics
+
+Praticar:
+1- Classe em dois pacotes importando um membro static
+2-
+
+Aprendizado:
+1- Na declaração do método main, pode conter a palavra final (shadow o metodo para outra classe não ver)
+
+2- Variáveis declaradas dentro do blocos try/catch, tem visibilidade apenas dentro das chaves declaradas
+
+3- Não deve haver * na declaração do package
+
+4- O pacote default não é considerado um pacote, pois o mesmo não pode ser importado
+
+5- A classe System pertence a ao pacote java.lang
+
+6- Quando imprimimos o objeto array, o mesmo serão impresso no console da seguinte maneira:
+[LClasse@<hashcode> (L por causa de classe e interface)
+
+7- Quando imprimimos uma classe no console, a mesma será impressa da seguinte maneira:
+Classe@<hashcode>
+
+import static
+- Se estiver acessando uma variável de X static diretamente, sem o nome da cleasse
+  import static com.foo.X.*;
+- Se estiver usando diretamente na classe X (X x = new X()) ou se tiver sendo usadana classe, exemplo:
+  System.out.println(LOGICID)
+  import com.foo.*;
+
+Polimorfismo
+- Evita que nomes conflitem internamente
+- Torna o código mais dinâmico
