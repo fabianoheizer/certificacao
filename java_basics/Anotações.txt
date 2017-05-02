@@ -1,11 +1,10 @@
 Tópico: Java Basics
 
 Praticar:
-1- Classe em dois pacotes importando um membro static
-2-
+1- Classe em dois pacotes importando um membro static (lembrando de colocar a classe no classpath para compilar)
 
 Aprendizado:
-1- Na declaração do método main, pode conter a palavra final (shadow o metodo para outra classe não ver)
+1- Na declaração do método main, pode conter a palavra final (oculta o metodo para outra classe não ver)
 
 2- Variáveis declaradas dentro do blocos try/catch, tem visibilidade apenas dentro das chaves declaradas
 
@@ -22,10 +21,10 @@ Aprendizado:
 Classe@<hashcode>
 
 import static
-- Se estiver acessando uma variável de X static diretamente, sem o nome da cleasse
+- Se estiver acessando uma variável de X static diretamente, sem o nome da classe
   import static com.foo.X.*;
-- Se estiver usando diretamente na classe X (X x = new X()) ou se tiver sendo usadana classe, exemplo:
-  System.out.println(LOGICID)
+- Se estiver usando diretamente na classe X (X x = new X()) ou se tiver sendo usada na classe, exemplo:
+  System.out.println(X.LOGICID)
   import com.foo.*;
 
 Polimorfismo
