@@ -5,24 +5,76 @@ Praticar:
 
 
 Aprendizado:
-1- Na declaração do método main, pode conter a palavra final (oculta o metodo para outra classe não ver)
+- Na declaração do método main, pode conter a palavra final (oculta o metodo para outra classe não ver)
 
-2- Variáveis declaradas dentro do blocos try/catch, tem visibilidade apenas dentro das chaves declaradas
+- Variáveis declaradas dentro do blocos try/catch, tem visibilidade apenas dentro das chaves declaradas
 
-3- Não deve haver * na declaração do package
+- Não deve haver * na declaração do package
 
-4- O pacote default não é considerado um pacote, pois o mesmo não pode ser importado
+- O pacote default não é considerado um pacote, pois o mesmo não pode ser importado
 
-5- A classe System pertence a ao pacote java.lang
+- A classe System pertence a ao pacote java.lang
 
-6- Quando imprimimos o objeto array, o mesmo serão impresso no console da seguinte maneira:
+- Quando imprimimos o objeto array, o mesmo serão impresso no console da seguinte maneira:
 [LClasse@<hashcode> (L por causa de classe e interface)
 
-7- Quando imprimimos uma classe no console, a mesma será impressa da seguinte maneira:
+- Quando imprimimos uma classe no console, a mesma será impressa da seguinte maneira:
 Classe@<hashcode>
+
+- Você pode ter um arquivo vazio, sem impor, sem package e sem declaração do nome da classe que o arquivo compila normalmente
+
+- Se existir uma interface e uma classe dentro do arquivo, a SDK gera um arquivo .class para cada uma
+
+- Não deve haver vírgula entre os nomes de classes nas declarações de extends e implements
+
+- A ordem dois modificadores não importa, desde que tenha os modificadores: public static void 
+
+- Propriedades da linha de comando
+	Propriedades: -Dparam=valor
+	Parâmetros: Valores separados por espaço
+	Exemplo: java -Dchave1=abc -Dchave2=def Foo xpto bar (Foo: Classe / spot e bar: parâmetros)
+
+- Classpath: Usando a biblioteca de terceiros para compilar a classe:
+	javac /diretoriolibs/Lib.jar Classe.java (para compilar Classe.java, utilize o diretoriolibs que contém Lib.jar
+
+- Pode ser utilizado quantos diretórios forem necessários, basta utilizar os separadores dos SOs
+	Linux : (dois pontos)
+	Windows ; (ponto e vírgula)
+  
+- Comandos para criar um arquivo .jar do projeto Xpto
+	jar -cf lib.jar Xpto
+	C: indica que você deseja criar um jar file
+	f: indica que a saída será um arquivo	
+	lib.jar: o nome do arquivo .jar. A extensão .jar não é obrigatório
+  Observações:
+  - As opções cf podem aparecer em qualquer lugar, mas não devem conter espaços
+  - o comando jar gera por padrão um arquivo manifest para as configurações desse jar. Esse arquivo fica por padrão no 	          diretório META-INF
+  - Para que o arquivo jar possa ser executado, é necessário informar qual é a classe main do projeto
+
+
+Passos para gerar um arquivo .jar
+1- Compilar a classe
+2- Executar os seguintes comandos:
+jar cf arquivo.jar Classe.class
+
+
+Arquivo .jar com manifest
+- Dentro do arquivo MANIFEST deve estar indicado qual é a classe principal de execução através do seguinte parâmetro:
+	Main-Class: Classe
+- Entre os dois pontos e o nome da classe deve conter um espaço
+- No final do arquivo deve conter uma linha em branco
+- Executar um jar sem ter um manifest, devemos usar o classpath customizado. Colocamos o JAR no classpath e dizemos qual a classe devemos rodar:
+	java -cp arquivo.jar Classe
+
+
+Passos para gerar um jar com MANIFEST
+jar cmd MeuManifest arquivo.jar Classe.class
+m: indica que haverá um manifest personalizado
 
 
 import static
+- Imports statics devem conter o nome dos membros STATICS
+
 - Se estiver acessando uma variável de X static diretamente, sem o nome da classe
   import static com.foo.X.* ou import static com.foo.X.LOGICID;
 
