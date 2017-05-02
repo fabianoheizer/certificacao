@@ -3,6 +3,7 @@ Tópico: Java Basics
 Praticar:
 1- Classe em dois pacotes importando um membro static (lembrando de colocar a classe no classpath para compilar)
 
+
 Aprendizado:
 1- Na declaração do método main, pode conter a palavra final (oculta o metodo para outra classe não ver)
 
@@ -20,13 +21,18 @@ Aprendizado:
 7- Quando imprimimos uma classe no console, a mesma será impressa da seguinte maneira:
 Classe@<hashcode>
 
+
 import static
 - Se estiver acessando uma variável de X static diretamente, sem o nome da classe
-  import static com.foo.X.*;
-- Se estiver usando diretamente na classe X (X x = new X()) ou se tiver sendo usada na classe, exemplo:
-  System.out.println(X.LOGICID)
-  import com.foo.*;
+  import static com.foo.X.* ou import static com.foo.X.LOGICID;
 
+- import com.foo.X.LOGICID. Se LOGICID for static, deve haver o static no import: import static com.foo.X.LOGICID
+
+- Não é necessário adicionar o static, quando estiver usando diretamente na classe, exemplo:
+  import com.foo.*;
+  System.out.println(X.LOGICID)
+ 
+ 
 Polimorfismo
 - Evita que nomes conflitem internamente
 - Torna o código mais dinâmico
