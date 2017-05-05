@@ -5,4 +5,6 @@ Tópico 2: Working with java data types
   
 - boolean teste = false|true; ou boolean teste2; = true||false - sempre será true
 
+- Na declaração de int primitivos, não pode haver 0. Exemplo: int num = 09 //inválido
+
 - 
