@@ -1,1 +1,8 @@
 Tópico 2: Working with java data types
+
+- A classe Boolean possui dois construtores:
+  Boolean(String arg) ou Boolean(true/false)
+  
+- boolean teste = false|true; ou boolean teste2; = true||false - sempre será true
+
+- 
