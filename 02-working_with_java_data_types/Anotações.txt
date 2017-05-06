@@ -3,8 +3,10 @@ Tópico 2: Working with java data types
 - A classe Boolean possui dois construtores:
   Boolean(String arg) ou Boolean(true/false)
   
-- boolean teste = false|true; ou boolean teste2; = true||false - sempre será true
+- boolean teste = false|true; ou boolean teste2 = true||false - sempre será true
 
 - Na declaração de int primitivos, não pode haver 0. Exemplo: int num = 09 //inválido
+
+- Na declaração de int primitivos, podem ser colocado o caracter _ / Exemplo: int num 123_456; //válido
 
 - 
