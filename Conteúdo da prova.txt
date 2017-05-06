@@ -1,0 +1,17 @@
+1- Java Basics
+
+2- Working with Java data types
+
+3- Using operators and decision constructs
+
+4- Creating and using arrays
+
+5- Using loop constructs
+
+6- Working with methods and encapsulation
+
+7- Working with inheritance
+
+8- Handling exceptions
+
+9- Working with selected classes from the java API
