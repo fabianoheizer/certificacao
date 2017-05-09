@@ -9,4 +9,6 @@ Tópico 2: Working with java data types
 
 - Na declaração de int primitivos, podem ser colocado o caracter _ / Exemplo: int num 123_456; //válido
 
-- 
+- Nunca podemos chamar um método que recebe array como se ele fosse varargs
+
+- StringBuilder x StringBuffer / Builder é synchronized e é mais rápido também
