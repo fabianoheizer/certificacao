@@ -5,10 +5,14 @@ Tópico 2: Working with java data types
   
 - boolean teste = false|true; ou boolean teste2 = true||false - sempre será true
 
-- Na declaração de int primitivos, não pode haver 0. Exemplo: int num = 09 //inválido
+- Na declaração primitivos, não pode haver 0. Exemplo: int num = 09 //inválido
 
-- Na declaração de int primitivos, podem ser colocado o caracter _ / Exemplo: int num 123_456; //válido
+- Na declaração de primitivos, podem ser colocado o caracter _ / Exemplo: int num 123_456; //válido
 
 - Nunca podemos chamar um método que recebe array como se ele fosse varargs
 
 - StringBuilder x StringBuffer / Builder é synchronized e é mais rápido também
+
+- Classes que não podem ser extendidas:
+    - Classes de tipo primitivo
+    - Classe System
