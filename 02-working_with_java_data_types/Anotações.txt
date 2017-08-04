@@ -7,7 +7,7 @@ Tópico 2: Working with java data types
 
 - Na declaração primitivos, não pode haver 0. Exemplo: int num = 09 //inválido
 
-- Na declaração de primitivos, podem ser colocado o caracter _ / Exemplo: int num 123_456; //válido
+- Na declaração de primitivos, podem ser colocado o caracter _ entre os dígitos / Exemplo: int num 123_456; //válido
 
 - Nunca podemos chamar um método que recebe array como se ele fosse varargs
 
@@ -16,3 +16,8 @@ Tópico 2: Working with java data types
 - Classes que não podem ser extendidas:
     - Classes de tipo primitivo
     - Classe System
+    
+- byte: de -128 127
+
+inner class
+
