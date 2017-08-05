@@ -11,9 +11,7 @@ Aprendizado:
 
 - Não deve haver * na declaração do package
 
-- O pacote default não é considerado um pacote, pois o mesmo não pode ser importado
-
-- A classe System pertence a ao pacote java.lang
+- O pacote default não é considerado um pacote, pois o mesmo não pode ser importado, logo, a classe não pode ser importada no pacote default
 
 - Quando imprimimos o objeto array, o mesmo serão impresso no console da seguinte maneira:
 [LClasse@<hashcode> (L por causa de classe e interface)
@@ -73,6 +71,8 @@ m: indica que haverá um manifest personalizado
 
 
 import static
+- A ordem deve ser sempre import static ...
+
 - Imports statics devem conter o nome dos membros STATICS
 
 - Se estiver acessando uma variável de X static diretamente, sem o nome da classe
