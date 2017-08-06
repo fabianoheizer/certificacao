@@ -1,2 +1,6 @@
 
 Using Operators and Decision Constructs
+
+switch statement
+- Não deve ser boolean
+
