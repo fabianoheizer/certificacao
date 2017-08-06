@@ -19,5 +19,11 @@ Tópico 2: Working with java data types
     
 - byte: de -128 127
 
+- o char é somente positivo
+
+- byte -> short -> int -> long
+
+- float -> double
+
 
 
