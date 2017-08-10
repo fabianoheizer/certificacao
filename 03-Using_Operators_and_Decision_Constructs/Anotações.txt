@@ -4,3 +4,16 @@ Using Operators and Decision Constructs
 switch statement
 - Não deve ser boolean
 
+- Operador | ou &, sempre testa os dois lados da expressão, mesmos em casos que não precisaria
+
+- operador ternário: lembrando que a variável que for atribuída o valor da operação, dever ser compatível.
+
+- A concatenação de Strings é um syntax sugar que o próprio compilador resolve. No código compilado, na verdade, é usado um StringBuilder
+
+- Precedência:
+  1º pré-incrementos/decrementos, 
+  2º multiplicação/divisão/mod, 
+  3º soma/subtração, 
+  4º shifts (<<, >>, >>>) 
+  5º pós-incrementos/decrementos
+
