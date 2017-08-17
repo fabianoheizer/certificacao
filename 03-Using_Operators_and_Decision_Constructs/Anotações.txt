@@ -3,11 +3,8 @@ Using Operators and Decision Constructs
 
 switch statement
 - Não deve ser boolean
-
 - Operador | ou &, sempre testa os dois lados da expressão, mesmos em casos que não precisaria
-
 - operador ternário: lembrando que a variável que for atribuída o valor da operação, dever ser compatível.
-
 - A concatenação de Strings é um syntax sugar que o próprio compilador resolve. No código compilado, na verdade, é usado um StringBuilder
 
 - Precedência:
@@ -16,4 +13,13 @@ switch statement
   3º soma/subtração, 
   4º shifts (<<, >>, >>>) 
   5º pós-incrementos/decrementos
+
+- Não existe char negativo
+
+String
+- A String só é adicionada ao pool, quando a mesma na forma literal
+- Na concatenação de literais, a String vai para o pool também 
+- Caso não tenha um literal na concatenação, será criada uma nova variável e a mesma estará na memória
+- String são imutáveis, logo, se chamarmos um método que retorne um conteúdo diferente da String original, o retorno desses métodos são novas Strings
+- Se o retorno do método, retorna o mesmo conteúdo da String, nenhum objeto é criado, é utilizada a mesma referência do pool
 
