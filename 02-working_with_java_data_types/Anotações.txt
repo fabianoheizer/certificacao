@@ -23,5 +23,13 @@ Tópico 2: Working with java data types
 
 - float -> double
 
+- Ao utilizar uma variável com final na declaração, observar se o programa tenta alterar o valor da variável
+
+- Na declaração de float, não deve-se colocar ponto flutuante
+
+- Variáveis final devem ser inicializadas
 
 
+Garbage Collector
+- An object can be made eligible for garbage collection by making sure there are no references pointing to that object.
+- You cannot directly invoke the garbage collector. You can suggest the JVM to perform garbage collection by calling System.gc();
