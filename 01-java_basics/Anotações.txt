@@ -19,13 +19,13 @@ Aprendizado:
 - Quando imprimimos uma classe no console, a mesma será impressa da seguinte maneira:
 Classe@<hashcode>
 
-- Você pode ter um arquivo vazio, sem impor, sem package e sem declaração do nome da classe que o arquivo compila normalmente
+- Você pode ter um arquivo vazio, sem import, sem package e sem declaração do nome da classe que o arquivo compila normalmente
 
 - Se existir uma interface e uma classe dentro do arquivo, a SDK gera um arquivo .class para cada uma
 
 - Não deve haver vírgula entre os nomes de classes nas declarações de extends e implements
 
-- A ordem dois modificadores não importa, desde que tenha os modificadores: public static void 
+- Método main: A ordem dois modificadores não importa, desde que tenha os modificadores: public static void 
 
 - Propriedades da linha de comando
 	Propriedades: -Dparam=valor
