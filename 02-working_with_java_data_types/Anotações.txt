@@ -3,11 +3,13 @@ Tópico 2: Working with java data types
 - A classe Boolean possui dois construtores:
   Boolean(String arg) ou Boolean(true/false)
   
-- Na declaração primitivos, não pode haver 0. Exemplo: int num = 09 //inválido
+- Na declaração primitivos, não pode haver 0 no início. Exemplo: int num = 09 //inválido
 
-- Na declaração de primitivos, podem ser colocado o caracter _ entre os dígitos / Exemplo: int num 123_456; //válido
+- Na declaração de primitivos, podem ser colocado o caracter _ entre os dígitos / 
+  Exemplo:  int num 123_456; //válido
+            float f = 123._445f; // inválido
 
-- Nunca podemos chamar um método que recebe array como se ele fosse varargs
+- Nunca podemos chamar um método que recebe array como se ele tivesse varargs na assinatura
 
 - StringBuilder x StringBuffer / Builder é synchronized e é mais rápido também
 
@@ -15,6 +17,8 @@ Tópico 2: Working with java data types
     - Classes de tipo primitivo
     - Classe System
     
+- A classe Number não é final, logo, ela pode ser extendida
+
 - byte: de -128 127
 
 - o char é somente positivo
@@ -25,11 +29,26 @@ Tópico 2: Working with java data types
 
 - Ao utilizar uma variável com final na declaração, observar se o programa tenta alterar o valor da variável
 
-- Na declaração de float, não deve-se colocar ponto flutuante
+- Na declaração de float, não deve-se colocar ponto flutuante. 
+  Exemplo:
+    float f = 2; //válido
+    float f2 = 2.0f; //válido
+    float f3 = 3.0; //inválido
 
 - Variáveis final devem ser inicializadas
 
+- Variáveis de métodos podem ser declaradas sem ser inicializadas. Devem ser inicializadas, apenas se forem usada no método.
 
 Garbage Collector
 - An object can be made eligible for garbage collection by making sure there are no references pointing to that object.
 - You cannot directly invoke the garbage collector. You can suggest the JVM to perform garbage collection by calling System.gc();
+
+
+Array
+- o método indexOf() recebe objeto como parâmetro
+
+- Ao declarar variável de qualquer tipo, estamos criando referências. Exemplo:
+    TestClass t1, t2, t3, t4; 
+    t1 = t2 = new TestClass(); 
+    t3 = new TestClass();
+    //two news => two objects. t1, t2, t3, t4 => 4 references.
