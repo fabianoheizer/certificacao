@@ -13,6 +13,16 @@ switch statement
 - Pode haver switch case dentro de opções case
 - A sintaxe do case é com : e não com {, o código não compila. Até podemos usar {, mas não sem os dois pontos
 - Pode ser usado concatenação de String no switch e no case, desde que, as variáveis sejam declaradas como final
+- Código válido:
+  int k = 9, s = 5;      
+  switch(k){          
+    default :          
+      if( k == 10) { s = s*2; }          
+      else{s = s+4; break;}          
+    case 7 : 
+        s = s+3;       
+  }
+  - Verificar se no case, existe a possibilidade de ser um byte. Se for um byte, atentar para que a variável seja entre -128~127
 
 
 Operadores
@@ -56,3 +66,4 @@ if e else
         else
             System.out.println("melhor ainda");
             System.out.println(nome);
+            
