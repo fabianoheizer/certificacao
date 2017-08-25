@@ -22,7 +22,7 @@ switch statement
     case 7 : 
         s = s+3;       
   }
-  - Verificar se no case, existe a possibilidade de ser um byte. Se for um byte, atentar para que a variável seja entre -128~127
+  - Verificar se no case, existe a possibilidade de ser um byte. Se for um byte, atentar para que a variável seja entre -128 ~ 127
 
 
 Operadores
@@ -67,3 +67,8 @@ if e else
             System.out.println("melhor ainda");
             System.out.println(nome);
             
+Erros que cometi no simulado 25/08/2017
+- o parâmetro args do main, nunca retorna null quando não passamos parâmetros
+- Decremento de número negativo, aumenta a escala negativa!
+- No if ternário, não é permitido usar método void. Exemplo:
+  
