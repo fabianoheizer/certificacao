@@ -1,16 +1,23 @@
 Tópico 2: Working with java data types
 
-- A classe Boolean possui dois construtores:
-  Boolean(String arg) ou Boolean(true/false)
-  
-- Na declaração primitivos, não pode haver 0 no início. Exemplo: int num = 09 //inválido
+Boolean
+- A classe Boolean possui dois construtores: Boolean(String arg) ou Boolean(true/false)
+- Espaços não são ignorados no construtor boolean com String, apenas o case sensitive da palavra que é ignorado
+- o método parseBoolean, retorna um primitivo
 
+
+Primitivos
+- Na declaração primitivos, não pode haver 0 no início. Exemplo: int num = 09 //inválido
 - Na declaração de primitivos, podem ser colocado o caracter _ entre os dígitos / 
   Exemplo:  int num 123_456; //válido
             float f = 123._445f; // inválido
 
+
+Varargs
 - Nunca podemos chamar um método que recebe array como se ele tivesse varargs na assinatura
 
+
+String
 - StringBuilder x StringBuffer / Builder é synchronized e é mais rápido também
 
 - Classes que não podem ser extendidas:
@@ -52,3 +59,10 @@ Array
     t1 = t2 = new TestClass(); 
     t3 = new TestClass();
     //two news => two objects. t1, t2, t3, t4 => 4 references.
+
+
+29/08/2017 - Erros cometidos no simulado:
+1- Na declaração de float, se houver ponto flutuante, deve ser informado o F ou f no final do número
+2- Não pode haver case com o mesmo valor
+
+
