@@ -11,7 +11,7 @@ switch statement
 - Não importa a ordem do DEFAULT, o mesmo é evaluado, apenas quando nenhuma das opções é encontrada
 - Podem haver declaração de case vazio
 - Pode haver switch case dentro de opções case
-- A sintaxe do case é com : e não com {, o código não compila. Até podemos usar {, mas não sem os dois pontos
+- A sintaxe do case é com : e não com {, o código não compila. Até podemos usar {, mas não sem os dois pontos. Devem estar depois dos dois pontos e depois do ; no final do case
 - Pode ser usado concatenação de String no switch e no case, desde que, as variáveis sejam declaradas como final
 - Código válido:
   int k = 9, s = 5;      
@@ -66,9 +66,24 @@ if e else
         else
             System.out.println("melhor ainda");
             System.out.println(nome);
-            
+
+
 Erros que cometi no simulado 25/08/2017
 - o parâmetro args do main, nunca retorna null quando não passamos parâmetros
 - Decremento de número negativo, aumenta a escala negativa!
 - No if ternário, não é permitido usar método void. Exemplo:
+
+
+Erros que cometi no simulado 28/08/2017
+- Concatenação inválida: 
+  null + true 
+  true + true
+- Uma questão de falta de anteção da resposta:
+  Se não existir chaves na declaração do else, o último else, pertence ao if mais interno
+- Método que não existe na classe da erro de compilação. Exemplo:
+  Object t = new Integer(107);     
+  int k = (Integer) t.intValue()/9;
+
+  
+  
   
