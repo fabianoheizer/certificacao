@@ -1,4 +1,21 @@
 Tópico 2: Working with java data types
+- Classes que não podem ser extendidas:
+    - Classes de tipo primitivo
+    - Classe System
+- A classe Number não é final, logo, ela pode ser extendida
+- byte: de -128 127
+- o char é somente positivo
+- byte -> short -> int -> long
+- float -> double
+- Ao utilizar uma variável com final na declaração, observar se o programa tenta alterar o valor da variável
+- Na declaração de float, não deve-se colocar ponto flutuante. 
+  Exemplo:
+    float f = 2; //válido
+    float f2 = 2.0f; //válido
+    float f3 = 3.0; //inválido
+- Variáveis final devem ser inicializadas
+- Variáveis de métodos podem ser declaradas sem ser inicializadas. Devem ser inicializadas, apenas se forem usada no método.
+
 
 Boolean
 - A classe Boolean possui dois construtores: Boolean(String arg) ou Boolean(true/false)
@@ -20,31 +37,6 @@ Varargs
 String
 - StringBuilder x StringBuffer / Builder é synchronized e é mais rápido também
 
-- Classes que não podem ser extendidas:
-    - Classes de tipo primitivo
-    - Classe System
-    
-- A classe Number não é final, logo, ela pode ser extendida
-
-- byte: de -128 127
-
-- o char é somente positivo
-
-- byte -> short -> int -> long
-
-- float -> double
-
-- Ao utilizar uma variável com final na declaração, observar se o programa tenta alterar o valor da variável
-
-- Na declaração de float, não deve-se colocar ponto flutuante. 
-  Exemplo:
-    float f = 2; //válido
-    float f2 = 2.0f; //válido
-    float f3 = 3.0; //inválido
-
-- Variáveis final devem ser inicializadas
-
-- Variáveis de métodos podem ser declaradas sem ser inicializadas. Devem ser inicializadas, apenas se forem usada no método.
 
 Garbage Collector
 - An object can be made eligible for garbage collection by making sure there are no references pointing to that object.
