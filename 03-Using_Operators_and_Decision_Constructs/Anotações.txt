@@ -3,6 +3,7 @@ Using Operators and Decision Constructs
 
 switch statement
 - Não deve conter boolean no switch
+- Não pode ter valor repetido no case
 - Dever ser uma variável compatível com NUMÉRICOS INTEIROS (int, byte), STRING ou um Enum
 - Deve conter o break, para que a opção correta seja executada e as demais não sejam executadas
 - Na declaração case, pode conter o parênteses. Exemplo: case (1):
