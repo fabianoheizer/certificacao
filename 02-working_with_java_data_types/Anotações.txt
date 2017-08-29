@@ -15,20 +15,27 @@ Tópico 2: Working with java data types
     float f3 = 3.0; //inválido
 - Variáveis final devem ser inicializadas
 - Variáveis de métodos podem ser declaradas sem ser inicializadas. Devem ser inicializadas, apenas se forem usada no método.
-
+- Os métodos longValue(), intValue()... são métodos de instância, logo a respectiva classe deve ser instanciada
+- Somente o método valueOf é static da classe String
+- Ao declarar variável de qualquer tipo, estamos criando referências. Exemplo:
+    TestClass t1, t2, t3, t4; 
+    t1 = t2 = new TestClass(); 
+    t3 = new TestClass();
+    //two news => two objects. t1, t2, t3, t4 => 4 references.
+    
 
 Boolean
 - A classe Boolean possui dois construtores: Boolean(String arg) ou Boolean(true/false)
 - Espaços não são ignorados no construtor boolean com String, apenas o case sensitive da palavra que é ignorado
-- o método parseBoolean, retorna um primitivo
+- O método parseBoolean(), retorna um primitivo
 
 
 Primitivos
-- Na declaração primitivos, não pode haver 0 no início. Exemplo: int num = 09 //inválido
-- Na declaração de primitivos, podem ser colocado o caracter _ entre os dígitos / 
+- Na declaração de int primitivo, não pode haver 0 no início. Exemplo: int num = 09 //inválido
+- Na declaração de primitivos, podem ser colocado o caracter _ entre os dígitos. Na compilação, o caracter é ignorado
   Exemplo:  int num 123_456; //válido
             float f = 123._445f; // inválido
-
+- Declaração válida: long l = 012; // número octal
 
 Varargs
 - Nunca podemos chamar um método que recebe array como se ele tivesse varargs na assinatura
@@ -46,11 +53,7 @@ Garbage Collector
 Array
 - o método indexOf() recebe objeto como parâmetro
 
-- Ao declarar variável de qualquer tipo, estamos criando referências. Exemplo:
-    TestClass t1, t2, t3, t4; 
-    t1 = t2 = new TestClass(); 
-    t3 = new TestClass();
-    //two news => two objects. t1, t2, t3, t4 => 4 references.
+
 
 
 29/08/2017 - Erros cometidos no simulado:
