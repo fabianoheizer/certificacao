@@ -5,8 +5,6 @@ Praticar:
 
 
 Aprendizado:
-- Na declaração do método main, pode conter a palavra final (oculta o metodo para outra classe não ver)
-
 - Variáveis declaradas dentro do blocos try/catch, tem visibilidade apenas dentro das chaves declaradas
 
 - Não deve haver * na declaração do package
@@ -25,7 +23,12 @@ Classe@<hashcode>
 
 - Não deve haver vírgula entre os nomes de classes nas declarações de extends e implements
 
-- Método main: A ordem dois modificadores não importa, desde que tenha os modificadores: public static void 
+
+Método main:
+- O tipo de retorno e o nome do método não devem estar separados
+- Na declaração do método main, pode conter a palavra final (oculta o metodo para outra classe não ver)
+- A ordem dois modificadores não importa, desde que tenha os modificadores: public static void 
+
 
 - Propriedades da linha de comando
 	Propriedades: -Dparam=valor
@@ -88,3 +91,10 @@ import static
 Polimorfismo
 - Evita que nomes conflitem internamente
 - Torna o código mais dinâmico
+
+
+31/08/2017 - Erros no simulado:
+1- Ao tentar e COMPILAR e RODAR a classe, sem o método main válido, será lançado um erro de java.lang.NoSuchMethodError
+2- Atentar para o escopo das variáveis declaradas
+
+
