@@ -1,0 +1,28 @@
+Arrays
+- Na declaração do array, não pode iniciar com colchetes.
+  Exemplo inválido:
+    [] int x;
+
+- Inicializar só com as chaves o array, tem que ser na mesma linha. 
+  Exemplo código inválido:
+    int[] idades;
+    idades = {0,2,4,6};
+
+- Se for em linha diferente, precisa colocar o new.
+  Exemplo:
+    int[] idades;
+    idades = new int[]{0,2,4,6};
+    
+    Observação: Não colocar o tamanho do array na declaração explícita
+
+- Não é permitido efetuar o cast de arrays de tipos primitivos. Dá erro ao compilar
+
+
+Arrays Multidimencionais
+- O primeiro array deve ser sempre inicializado e os demais, incializados depois.
+  Exemplo código válido:
+  int [][] materias = new int[10][];
+  
+  Exemplo código inválido:
+  int [][] materias = new int[][10];
+  
