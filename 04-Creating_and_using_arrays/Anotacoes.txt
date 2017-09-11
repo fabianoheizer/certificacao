@@ -38,6 +38,8 @@ ArrayList
 
 - Seu tipo generic não é cobrado na prova
 
+- Se mudar o objeto, a sua referência no array é automaticamente alterada
+
 
 Principais métodos do ArrayList
 - add(): adiciona um elemento no array. Pode ser utilizado o índice que deseja ser inserido
