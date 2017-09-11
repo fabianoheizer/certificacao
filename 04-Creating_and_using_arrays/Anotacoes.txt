@@ -26,3 +26,65 @@ Arrays Multidimencionais
   Exemplo código inválido:
   int [][] materias = new int[][10];
   
+
+
+ArrayList
+- Utilizado a partir do import.
+  import java.util.ArrayList;
+  
+- Permite acesso aleatório
+
+- O tamanho aumenta dinâmicamente
+
+- Seu tipo generic não é cobrado na prova
+
+
+Principais métodos do ArrayList
+- add(): adiciona um elemento no array. Pode ser utilizado o índice que deseja ser inserido
+  Exemplos:
+  ArrayList paises = new ArrayList();
+  paises.add("Italia");
+  paises.add("Holanda");
+  paises.add("Franca");
+  paises.add("Portugal");
+  
+  Ou
+  
+  paises.add(0, "Italia");
+  paises.add(1, "Holanda");
+  
+  Observação:
+  - Se no método add() for passado qual índice deseja inserir, deve-se atentar para o primeiro índice ser o zero
+    Exemplo:
+     ArrayList paises = new ArrayList();
+     paises.add(1, "Brasil");
+     
+     -> Compila mas ao executar, lança IndexOutOfBoundsException
+  
+- remove(): remove a primeira ocorrência do objeto encontrado. Retorna true ou false para a operação realizada. Pode ser utilizado o índice que deseja ser removido
+  Exemplo:
+  ArrayList nomes = new ArrayList();
+  nomes.add("joao");
+  nomes.add("maria");
+  
+  nomes.remove("joao");
+  nomes.remove(0);
+  
+  Observação:
+  Se for passado para o método remove() um índice inválido, será lançado IndexOutOfBoundsException em tempo de execução
+  
+- set(): altera o elemento da determinada posição
+  Exemplo:
+  ArrayList nomes = new ArrayList();
+  nomes.add("joao");
+  paises.set(0, "maria");
+  
+- indexOf(): Retorna o índice onde encontra-se a PRIMEIRA ocorrência do objeto
+
+- lastIndexOf(): Retorna o último índice onde encontra-se o objeto
+
+
+  
+  
+
+
