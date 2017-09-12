@@ -85,7 +85,8 @@ Principais métodos do ArrayList
 
 - lastIndexOf(): Retorna o último índice onde encontra-se o objeto
 
-
+- toArray():
+  Ao invocar o método sem argumentos o mesmo retorna um array de Object
   
   
 
